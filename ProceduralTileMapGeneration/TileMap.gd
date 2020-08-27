@@ -18,9 +18,10 @@ func _ready():
 		grid.append([])
 		for y in grid_size.y:
 			grid[x].append(null)
-			set_cell(x,y,tiles[randi()  % tiles.size()])
+			set_cell(x,y,4)
+			#set_cell(x,y,tiles[randi()  % tiles.size()])
 			
-	
+	update_bitmask_region(Vector2(0,0), grid_size)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
