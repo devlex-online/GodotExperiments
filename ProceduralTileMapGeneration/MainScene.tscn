@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://DummyTileSet.tres" type="TileSet" id=1]
 [ext_resource path="res://TileMap.gd" type="Script" id=2]
 [ext_resource path="res://Camera2D.gd" type="Script" id=3]
+[ext_resource path="res://ColorRect.gd" type="Script" id=4]
 
 [node name="MainScene" type="Node2D"]
 
@@ -17,3 +18,19 @@ script = ExtResource( 2 )
 position = Vector2( 520, 304 )
 current = true
 script = ExtResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera2D"]
+
+[node name="ColorRect" type="ColorRect" parent="Camera2D/CanvasLayer"]
+margin_right = 416.0
+margin_bottom = 416.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TileMap" type="TileMap" parent="Camera2D/CanvasLayer/ColorRect"]
+scale = Vector2( 0.1, 0.1 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
