@@ -4,6 +4,11 @@ var speed = 800
 var obstacle_index = 0
 puppet var puppet_pos
 puppet var puppet_direction
+
+func _ready():
+	puppet_pos = position
+	puppet_direction = Vector2()
+	
 func _physics_process(delta):
 	
 	var direction = Vector2()
