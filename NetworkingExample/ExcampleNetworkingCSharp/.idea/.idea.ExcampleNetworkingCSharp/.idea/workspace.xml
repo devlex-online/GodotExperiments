@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="42f20d6b-28a4-4973-bbdc-c4de98bf9760" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ExcampleNetworkingCSharp/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ExcampleNetworkingCSharp/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ExcampleNetworkingCSharp/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ExcampleNetworkingCSharp/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/ExampleNetworkingCSharpClient.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/ExampleNetworkingCSharpClient.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/MainScene.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/Scenes/Singletons/Server.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/default_env.tres" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/game/PlacableObstacle.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/game/PlacableObstacle.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/game/Player.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/game/Player.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/game/TestNPC.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/game/TestNPC.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/game/World.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/game/World.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/icon.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpClient/project.godot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/ExampleNetworkingCSharpServer.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/ExampleNetworkingCSharpServer.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/Scenes/Main/Server.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/Scenes/Main/Server.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/default_env.tres" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/icon.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExampleNetworkingCSharpServer/project.godot" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1jWFkMT6fo7xvsDKssCvIKLVXje" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42f20d6b-28a4-4973-bbdc-c4de98bf9760" name="Default Changelist" comment="" />
+      <created>1603912082991</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603912082991</updated>
+      <workItem from="1603912106778" duration="194000" />
+      <workItem from="1603912348930" duration="631000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
