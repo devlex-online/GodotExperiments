@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7ee7ccf4-2d08-41c7-87b1-7621d9b8574b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../NetworkingExample/ExcampleNetworkingCSharp/.idea/.idea.ExcampleNetworkingCSharp/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NetworkingExample/ExcampleNetworkingCSharp/.idea/.idea.ExcampleNetworkingCSharp/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NetworkingExample/ExcampleNetworkingCSharp/.idea/.idea.ExcampleNetworkingCSharp/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NetworkingExample/ExcampleNetworkingCSharp/.idea/.idea.ExcampleNetworkingCSharp/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/.idea/.idea.ExampleNetworkingCSharpClient/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/ExampleNetworkingCSharpClient.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/ExampleNetworkingCSharpClient.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/MainScene.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/Scenes/Singletons/Server.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/default_env.tres" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/game/PlacableObstacle.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/game/PlacableObstacle.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/game/Player.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/game/Player.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/game/TestNPC.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/game/TestNPC.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/game/World.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/game/World.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/icon.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpClient/project.godot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/.idea/.idea.ExampleNetworkingCSharpServer/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/ExampleNetworkingCSharpServer.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/ExampleNetworkingCSharpServer.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/Scenes/Main/Server.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/Scenes/Main/Server.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/default_env.tres" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/icon.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NetworkingExample/ExampleNetworkingCSharpServer/project.godot" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Scenes/NeedsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Scenes/EatableObject.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Scenes/EntityController.cs" />
+        <option value="$PROJECT_DIR$/Scenes/NeedsController.cs" />
+        <option value="$PROJECT_DIR$/Scenes/EatableObject.cs" />
+        <option value="$PROJECT_DIR$/Scenes/RandomMovementController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jnCCkErrOc3GHTcEPNiyOUCuVn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34962717" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29991716" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Mono Remote.Attach to Player">
+    <configuration name="Attach to Player" type="ConnectRemote" factoryName="Mono Remote" show_console_on_std_err="false" show_console_on_std_out="false" port="23685" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Editor" type="GODOT_DEBUG_RUN_CONFIGURATION" factoryName="Start and Debug">
+      <option name="EXE_PATH" value="/Applications/Godot_mono.app/Contents/MacOS/Godot" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot; --editor" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Player" type="GODOT_DEBUG_RUN_CONFIGURATION" factoryName="Start and Debug">
+      <option name="EXE_PATH" value="/Applications/Godot_mono.app/Contents/MacOS/Godot" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot;" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ee7ccf4-2d08-41c7-87b1-7621d9b8574b" name="Default Changelist" comment="" />
+      <created>1604430348785</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604430348785</updated>
+      <workItem from="1604430366953" duration="8431000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1238" height="257" key="GridCell.Tab.0.bottom" timestamp="1604437793486">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.0.bottom/0.23.1280.739@0.23.1280.739" timestamp="1604437793486" />
+    <state width="1238" height="257" key="GridCell.Tab.0.center" timestamp="1604437793485">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.0.center/0.23.1280.739@0.23.1280.739" timestamp="1604437793485" />
+    <state width="1238" height="257" key="GridCell.Tab.0.left" timestamp="1604437793484">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.0.left/0.23.1280.739@0.23.1280.739" timestamp="1604437793484" />
+    <state width="1238" height="257" key="GridCell.Tab.0.right" timestamp="1604437793486">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.0.right/0.23.1280.739@0.23.1280.739" timestamp="1604437793486" />
+    <state width="1238" height="257" key="GridCell.Tab.1.bottom" timestamp="1604437793282">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.1.bottom/0.23.1280.739@0.23.1280.739" timestamp="1604437793282" />
+    <state width="1238" height="257" key="GridCell.Tab.1.center" timestamp="1604437793281">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.1.center/0.23.1280.739@0.23.1280.739" timestamp="1604437793281" />
+    <state width="1238" height="257" key="GridCell.Tab.1.left" timestamp="1604437793280">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.1.left/0.23.1280.739@0.23.1280.739" timestamp="1604437793280" />
+    <state width="1238" height="257" key="GridCell.Tab.1.right" timestamp="1604437793281">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.1.right/0.23.1280.739@0.23.1280.739" timestamp="1604437793281" />
+    <state width="1238" height="257" key="GridCell.Tab.2.bottom" timestamp="1604437793284">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.2.bottom/0.23.1280.739@0.23.1280.739" timestamp="1604437793284" />
+    <state width="1238" height="257" key="GridCell.Tab.2.center" timestamp="1604437793283">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.2.center/0.23.1280.739@0.23.1280.739" timestamp="1604437793283" />
+    <state width="1238" height="257" key="GridCell.Tab.2.left" timestamp="1604437793282">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.2.left/0.23.1280.739@0.23.1280.739" timestamp="1604437793282" />
+    <state width="1238" height="257" key="GridCell.Tab.2.right" timestamp="1604437793283">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.2.right/0.23.1280.739@0.23.1280.739" timestamp="1604437793283" />
+    <state width="1238" height="257" key="GridCell.Tab.3.bottom" timestamp="1604437793286">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.3.bottom/0.23.1280.739@0.23.1280.739" timestamp="1604437793286" />
+    <state width="1238" height="257" key="GridCell.Tab.3.center" timestamp="1604437793285">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.3.center/0.23.1280.739@0.23.1280.739" timestamp="1604437793285" />
+    <state width="1238" height="257" key="GridCell.Tab.3.left" timestamp="1604437793284">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.3.left/0.23.1280.739@0.23.1280.739" timestamp="1604437793284" />
+    <state width="1238" height="257" key="GridCell.Tab.3.right" timestamp="1604437793285">
+      <screen x="0" y="23" width="1280" height="739" />
+    </state>
+    <state width="1238" height="257" key="GridCell.Tab.3.right/0.23.1280.739@0.23.1280.739" timestamp="1604437793285" />
+  </component>
+</project>
