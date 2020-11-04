@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/Grid_Pixel_Tiere.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/RandomMovementController.cs" type="Script" id=2]
@@ -7,9 +7,13 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7.53896, 7.36728 )
 
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 9.77887, 9.32721 )
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 107.365
+
 [node name="KinematicBody2D" type="KinematicBody2D"]
-collision_layer = 3
-collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.559982, -0.559978 )
@@ -24,5 +28,25 @@ texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 31, 0, 16, 16 )
 
+[node name="EatingArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="EatingArea"]
+position = Vector2( -0.279991, -0.27998 )
+shape = SubResource( 3 )
+
 [node name="NeedsController" type="Node" parent="."]
 script = ExtResource( 3 )
+_alwaysEatLimit = 50.0
+_maybeEatLimit = 30.0
+_eatAreaPath = NodePath("../EatingArea")
+_searchFoodAreaPath = NodePath("../SearchFoodArea")
+_randomMovementControllerPath = NodePath("../RandomMovementController")
+
+[node name="SearchFoodArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SearchFoodArea"]
+shape = SubResource( 4 )

@@ -12,6 +12,22 @@ namespace DTopDownPlayGround.Scenes
 
         private RandomNumberGenerator _rng;
         private Vector2 _velocity;
+
+        public Vector2? Target
+        {
+            get
+            {
+                return _target;
+            }
+            set
+            {
+                _target = value;
+                _hasTarget = value != null;
+            }
+        }
+
+        private Vector2? _target = null;
+        private bool _hasTarget = false;
         public override void _Ready()
         {
             _rng = new RandomNumberGenerator();
@@ -23,6 +39,10 @@ namespace DTopDownPlayGround.Scenes
 
         public override void _PhysicsProcess(float delta)
         {
+            if (_hasTarget)
+            {
+                _velocity = GetVelocityToTarget();
+            }
             var collision = _kinematicBody.MoveAndCollide(_velocity * delta);
             if (collision != null)
             {
@@ -30,6 +50,17 @@ namespace DTopDownPlayGround.Scenes
             }
         }
 
+        private Vector2 GetVelocityToTarget()
+        {
+            if (_hasTarget)
+            {
+                return (GetParent<Node2D>().Position.DirectionTo(_target.Value)).Normalized() * 100f;
+            }
+            else
+            {
+                return NewVelocity();
+            }
+        }
         private Vector2 NewVelocity()
         {
             Vector2 velocity = new Vector2(_rng.Randf(), _rng.Randf()).Normalized();
