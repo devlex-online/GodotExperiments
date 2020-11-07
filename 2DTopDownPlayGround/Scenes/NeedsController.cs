@@ -21,6 +21,10 @@ namespace DTopDownPlayGround.Scenes
         [Export]
         private float _maybeEatLimit = 25f;
         [Export]
+        private float _alwaysDrinkLimit = 50f;
+        [Export]
+        private float _maybeDrinkLimit = 25f;
+        [Export]
         private NodePath _eatAreaPath;
         [Export]
         private NodePath _searchFoodAreaPath;
@@ -42,8 +46,10 @@ namespace DTopDownPlayGround.Scenes
             _rng.Randomize();
             var area2D = GetNode<Area2D>(_eatAreaPath);
             area2D.Connect("body_entered", this, "OnEatAreaBodyEntered");
+            area2D.Connect("area_entered", this, "OnEatAreaAreaEntered");
             area2D = GetNode<Area2D>(_searchFoodAreaPath);
             area2D.Connect("body_entered", this, "OnSearchFoodAreaBodyEntered");
+            area2D.Connect("body_entered", this, "OnSearchFoodAreaAreaEntered");
             _randomMovementController = GetNode<RandomMovementController>(_randomMovementControllerPath);
         }
 
@@ -68,7 +74,30 @@ namespace DTopDownPlayGround.Scenes
                 }
             }
         }
-
+        public void OnSearchFoodAreaAreaEntered(Area2D area)
+        {
+            if (_thirst > _alwaysDrinkLimit && !_hasTargetFood)
+            {
+                if (area.IsInGroup("WaterArea"))
+                {
+                    setTargetFood(area.Position);
+                }
+            }
+        }
+        public void OnEatAreaAreaEntered(Area2D area)
+        {
+            if (area.IsInGroup("WaterArea"))
+            {
+                if (_thirst > _alwaysDrinkLimit)
+                {
+                    Drink();
+                }
+                else if (_thirst > _maybeDrinkLimit && _rng.RandiRange(1, 100) > 90)
+                {
+                    Drink();
+                }
+            }
+        }
         public void OnEatAreaBodyEntered(Node body)
         {
             if (_hunger > _alwaysEatLimit)
@@ -87,6 +116,12 @@ namespace DTopDownPlayGround.Scenes
                     Eat(node);
                 }
             }
+        }
+
+        public void Drink()
+        {
+            ModifyThirst(_thirstMax * -1);
+            clearTargetFood();
         }
         public void Eat(EatableObject eatableObject)
         {
@@ -129,7 +164,7 @@ namespace DTopDownPlayGround.Scenes
 
         public override void _PhysicsProcess(float delta)
         {
-           // GD.Print(_hunger,_thirst,_reproduction);
+            GD.Print("H:",_hunger," T:",_thirst, " R:",_reproduction);
         }
     }
 }

@@ -20,3 +20,4 @@ region_rect = Rect2( 15, 0, 16, 16 )
 
 [node name="EatableObject" type="Node" parent="."]
 script = ExtResource( 2 )
+HungerModifier = -2.0

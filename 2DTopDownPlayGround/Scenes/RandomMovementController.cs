@@ -33,7 +33,7 @@ namespace DTopDownPlayGround.Scenes
             _rng = new RandomNumberGenerator();
             _rng.Randomize();
             _velocity = NewVelocity();
-            GD.Print(_rng.Seed);
+            //GD.Print(_rng.Seed);
             _kinematicBody = GetNode<KinematicBody2D>(_kinematicBodyNodePath);
         }
 

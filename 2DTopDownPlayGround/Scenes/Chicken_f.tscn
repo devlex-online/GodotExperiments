@@ -38,8 +38,8 @@ shape = SubResource( 3 )
 
 [node name="NeedsController" type="Node" parent="."]
 script = ExtResource( 3 )
-_alwaysEatLimit = 50.0
-_maybeEatLimit = 30.0
+_alwaysEatLimit = 20.0
+_maybeEatLimit = 15.0
 _eatAreaPath = NodePath("../EatingArea")
 _searchFoodAreaPath = NodePath("../SearchFoodArea")
 _randomMovementControllerPath = NodePath("../RandomMovementController")
