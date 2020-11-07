@@ -92,6 +92,7 @@ namespace DTopDownPlayGround.Scenes
         {
             _hunger = ModifyNeed(_hunger, eatableObject.HungerModifier, _hungerMax);
             eatableObject.GetParent().QueueFree();
+            clearTargetFood();
         }
         public void ModifyThirst(float modifier)
         {
@@ -128,7 +129,7 @@ namespace DTopDownPlayGround.Scenes
 
         public override void _PhysicsProcess(float delta)
         {
-            GD.Print(_hunger,_thirst,_reproduction);
+           // GD.Print(_hunger,_thirst,_reproduction);
         }
     }
 }
