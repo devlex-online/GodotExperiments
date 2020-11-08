@@ -49,7 +49,7 @@ namespace DTopDownPlayGround.Scenes
             area2D.Connect("area_entered", this, "OnEatAreaAreaEntered");
             area2D = GetNode<Area2D>(_searchFoodAreaPath);
             area2D.Connect("body_entered", this, "OnSearchFoodAreaBodyEntered");
-            area2D.Connect("body_entered", this, "OnSearchFoodAreaAreaEntered");
+            area2D.Connect("area_entered", this, "OnSearchFoodAreaAreaEntered");
             _randomMovementController = GetNode<RandomMovementController>(_randomMovementControllerPath);
         }
 
@@ -65,18 +65,19 @@ namespace DTopDownPlayGround.Scenes
         }
         public void OnSearchFoodAreaBodyEntered(Node body)
         {
-            if (_hunger > _alwaysEatLimit && !_hasTargetFood)
+
+        }
+        public void OnSearchFoodAreaAreaEntered(Area2D area)
+        {
+            if (area.IsInGroup("PlantArea") && _hunger > _alwaysEatLimit && !_hasTargetFood)
             {
-                var node = body.GetNodeOrNull<EatableObject>(new NodePath("EatableObject"));
+                var node = area.GetNodeOrNull<EatableObject>(new NodePath("EatableObject"));
                 if (node != null)
                 {
                     setTargetFood(node.GetParent<Node2D>().Position);
                 }
             }
-        }
-        public void OnSearchFoodAreaAreaEntered(Area2D area)
-        {
-            if (_thirst > _alwaysDrinkLimit && !_hasTargetFood)
+            else if (area.IsInGroup("WaterArea") && _thirst > _alwaysDrinkLimit && !_hasTargetFood)
             {
                 if (area.IsInGroup("WaterArea"))
                 {
@@ -86,6 +87,26 @@ namespace DTopDownPlayGround.Scenes
         }
         public void OnEatAreaAreaEntered(Area2D area)
         {
+            if (area.IsInGroup("PlantArea"))
+            {
+                if (_hunger > _alwaysEatLimit)
+                {
+                    var node = area.GetNodeOrNull<EatableObject>(new NodePath("EatableObject"));
+                    if (node != null)
+                    {
+                        Eat(node);
+                    }
+                }
+                else if (_hunger > _maybeEatLimit && _rng.RandiRange(1, 100) > 90)
+                {
+                    var node = area.GetNodeOrNull<EatableObject>(new NodePath("EatableObject"));
+                    if (node != null)
+                    {
+                        Eat(node);
+                    }
+                }
+            }
+
             if (area.IsInGroup("WaterArea"))
             {
                 if (_thirst > _alwaysDrinkLimit)
@@ -100,22 +121,7 @@ namespace DTopDownPlayGround.Scenes
         }
         public void OnEatAreaBodyEntered(Node body)
         {
-            if (_hunger > _alwaysEatLimit)
-            {
-                var node = body.GetNodeOrNull<EatableObject>(new NodePath("EatableObject"));
-                if (node != null)
-                {
-                    Eat(node);
-                }
-            }
-            else if (_hunger > _maybeEatLimit && _rng.RandiRange(1, 100) > 90)
-            {
-                var node = body.GetNodeOrNull<EatableObject>(new NodePath("EatableObject"));
-                if (node != null)
-                {
-                    Eat(node);
-                }
-            }
+
         }
 
         public void Drink()
@@ -126,6 +132,9 @@ namespace DTopDownPlayGround.Scenes
         public void Eat(EatableObject eatableObject)
         {
             _hunger = ModifyNeed(_hunger, eatableObject.HungerModifier, _hungerMax);
+            var tileMap = eatableObject.GetParent().GetParent<TileMap>();
+            var tilepos = tileMap.WorldToMap(eatableObject.GetParent<Node2D>().Position);
+            tileMap.SetCellv(tilepos, -1);
             eatableObject.GetParent().QueueFree();
             clearTargetFood();
         }

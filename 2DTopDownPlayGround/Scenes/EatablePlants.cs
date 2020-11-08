@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using DTopDownPlayGround;
 
-public class Ground : ExtendedTileMap
+public class EatablePlants : ExtendedTileMap
 {
     [Export] private List<string> _tileNames;
     [Export] private List<Vector2> _autoTileCoordinateVectors;
@@ -12,4 +12,5 @@ public class Ground : ExtendedTileMap
     {
         AddNodeToTiles(_pathToAddedScene, _tileNames, _autoTileCoordinateVectors);
     }
+
 }

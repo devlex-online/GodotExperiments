@@ -1,22 +1,19 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Assets/Grid_Pixel_Pflanzen.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/EatableObject.cs" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 7.19469, 7.75051 )
+extents = Vector2( 16, 16 )
 
-[node name="Plant" type="StaticBody2D"]
-collision_layer = 3
-collision_mask = 0
+[node name="Plant" type="Area2D" groups=[
+"PlantArea",
+]]
+collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 8, 8 )
 shape = SubResource( 1 )
-
-[node name="Grid_Pixel_Pflanzen" type="Sprite" parent="."]
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 15, 0, 16, 16 )
 
 [node name="EatableObject" type="Node" parent="."]
 script = ExtResource( 2 )

@@ -7,10 +7,10 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7.53896, 7.36728 )
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 9.77887, 9.32721 )
 
-[sub_resource type="CircleShape2D" id=4]
+[sub_resource type="CircleShape2D" id=3]
 radius = 107.365
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
@@ -29,12 +29,12 @@ region_enabled = true
 region_rect = Rect2( 31, 0, 16, 16 )
 
 [node name="EatingArea" type="Area2D" parent="."]
-collision_layer = 0
+collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="EatingArea"]
 position = Vector2( -0.279991, -0.27998 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="NeedsController" type="Node" parent="."]
 script = ExtResource( 3 )
@@ -45,8 +45,8 @@ _searchFoodAreaPath = NodePath("../SearchFoodArea")
 _randomMovementControllerPath = NodePath("../RandomMovementController")
 
 [node name="SearchFoodArea" type="Area2D" parent="."]
-collision_layer = 0
+collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SearchFoodArea"]
-shape = SubResource( 4 )
+shape = SubResource( 3 )
