@@ -10,12 +10,14 @@ namespace DTopDownPlayGround.Scenes
         private float _thirstRate = 1f;
         [Export]
         private float _reproductionRate = 1f;
-        [Export]
-        private float _hungerMax = 100f;
-        [Export]
-        private float _thirstMax = 100f;
-        [Export]
-        private float _reproductionMax = 100f;
+        
+        [field: Export]
+        public float HungerMax { get; } = 100f;
+        [field: Export]
+        public float ThirstMax { get; } = 100f;
+        [field: Export]
+        public float ReproductionMax { get; } = 100f;
+
         [Export]
         private float _alwaysEatLimit = 50f;
         [Export]
@@ -32,14 +34,15 @@ namespace DTopDownPlayGround.Scenes
         private NodePath _randomMovementControllerPath;
         
         private RandomMovementController _randomMovementController;
-        
-        private float _hunger = 0f;
-        private float _thirst = 0f;
-        private float _reproduction = 0f;
-        
+
+        public float Hunger { get; private set; } = 0f;
+        public float Thirst { get; private set; } = 0f;
+        public float Reproduction { get; private set; } = 0f;
+
         private RandomNumberGenerator _rng;
 
         private bool _hasTargetFood = false;
+
         public override void _Ready()
         {
             _rng = new RandomNumberGenerator();
@@ -69,7 +72,7 @@ namespace DTopDownPlayGround.Scenes
         }
         public void OnSearchFoodAreaAreaEntered(Area2D area)
         {
-            if (area.IsInGroup("PlantArea") && _hunger > _alwaysEatLimit && !_hasTargetFood)
+            if (area.IsInGroup("PlantArea") && Hunger > _alwaysEatLimit && !_hasTargetFood)
             {
                 var node = area.GetNodeOrNull<EatableObject>(new NodePath("EatableObject"));
                 if (node != null)
@@ -77,7 +80,7 @@ namespace DTopDownPlayGround.Scenes
                     setTargetFood(node.GetParent<Node2D>().Position);
                 }
             }
-            else if (area.IsInGroup("WaterArea") && _thirst > _alwaysDrinkLimit && !_hasTargetFood)
+            else if (area.IsInGroup("WaterArea") && Thirst > _alwaysDrinkLimit && !_hasTargetFood)
             {
                 if (area.IsInGroup("WaterArea"))
                 {
@@ -89,7 +92,7 @@ namespace DTopDownPlayGround.Scenes
         {
             if (area.IsInGroup("PlantArea"))
             {
-                if (_hunger > _alwaysEatLimit)
+                if (Hunger > _alwaysEatLimit)
                 {
                     var node = area.GetNodeOrNull<EatableObject>(new NodePath("EatableObject"));
                     if (node != null)
@@ -97,7 +100,7 @@ namespace DTopDownPlayGround.Scenes
                         Eat(node);
                     }
                 }
-                else if (_hunger > _maybeEatLimit && _rng.RandiRange(1, 100) > 90)
+                else if (Hunger > _maybeEatLimit && _rng.RandiRange(1, 100) > 90)
                 {
                     var node = area.GetNodeOrNull<EatableObject>(new NodePath("EatableObject"));
                     if (node != null)
@@ -109,11 +112,11 @@ namespace DTopDownPlayGround.Scenes
 
             if (area.IsInGroup("WaterArea"))
             {
-                if (_thirst > _alwaysDrinkLimit)
+                if (Thirst > _alwaysDrinkLimit)
                 {
                     Drink();
                 }
-                else if (_thirst > _maybeDrinkLimit && _rng.RandiRange(1, 100) > 90)
+                else if (Thirst > _maybeDrinkLimit && _rng.RandiRange(1, 100) > 90)
                 {
                     Drink();
                 }
@@ -126,12 +129,12 @@ namespace DTopDownPlayGround.Scenes
 
         public void Drink()
         {
-            ModifyThirst(_thirstMax * -1);
+            ModifyThirst(ThirstMax * -1);
             clearTargetFood();
         }
         public void Eat(EatableObject eatableObject)
         {
-            _hunger = ModifyNeed(_hunger, eatableObject.HungerModifier, _hungerMax);
+            Hunger = ModifyNeed(Hunger, eatableObject.HungerModifier, HungerMax);
             var tileMap = eatableObject.GetParent().GetParent<TileMap>();
             var tilepos = tileMap.WorldToMap(eatableObject.GetParent<Node2D>().Position);
             tileMap.SetCellv(tilepos, -1);
@@ -140,19 +143,19 @@ namespace DTopDownPlayGround.Scenes
         }
         public void ModifyThirst(float modifier)
         {
-            _thirst = ModifyNeed(_thirst, modifier, _thirstMax);
+            Thirst = ModifyNeed(Thirst, modifier, ThirstMax);
         }
         public void ModifyReproduction(float modifier)
         {
-            _reproduction = ModifyNeed(_reproduction, modifier, _reproductionMax);
+            Reproduction = ModifyNeed(Reproduction, modifier, ReproductionMax);
         }
     
         public override void _Process(float delta)
         {
-            _hunger = RateCalculation(_hunger, _hungerRate, _hungerMax, delta);
-            _thirst = RateCalculation(_thirst, _thirstRate, _thirstMax, delta);
-            _reproduction = RateCalculation(_reproduction, _reproductionRate, _reproductionMax, delta);
-            if (_hunger <= _alwaysEatLimit)
+            Hunger = RateCalculation(Hunger, _hungerRate, HungerMax, delta);
+            Thirst = RateCalculation(Thirst, _thirstRate, ThirstMax, delta);
+            Reproduction = RateCalculation(Reproduction, _reproductionRate, ReproductionMax, delta);
+            if (Hunger <= _alwaysEatLimit)
             {
                 clearTargetFood();
             }
@@ -173,7 +176,7 @@ namespace DTopDownPlayGround.Scenes
 
         public override void _PhysicsProcess(float delta)
         {
-            GD.Print("H:",_hunger," T:",_thirst, " R:",_reproduction);
+            GD.Print("H:",Hunger," T:",Thirst, " R:",Reproduction);
         }
     }
 }

@@ -17,6 +17,7 @@
         <e p="EatableObject.cs" t="Include" />
         <e p="EatablePlants.cs" t="Include" />
         <e p="Ground.cs" t="Include" />
+        <e p="NeedIndicators.cs" t="Include" />
         <e p="NeedsController.cs" t="Include" />
         <e p="RandomMovementController.cs" t="Include" />
       </e>

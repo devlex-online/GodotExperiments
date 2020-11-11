@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scenes/NeedIndicators.cs" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.054902, 0.705882, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.00784314, 0, 0.67451, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.713726, 0, 0.772549, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+
+[node name="NeedIndicators" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+_needsControllerPath = NodePath("../NeedsController")
+
+[node name="HungerBar" type="ProgressBar" parent="."]
+margin_left = -8.0
+margin_top = -24.0
+margin_right = 8.0
+margin_bottom = -19.0
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+value = 50.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HungerBar"]
+margin_left = 3.17622
+margin_top = 0.916298
+margin_right = 51.1762
+margin_bottom = 16.9163
+rect_scale = Vector2( 0.2, 0.2 )
+text = "Hunger"
+scroll_active = false
+
+[node name="ThirstBar" type="ProgressBar" parent="."]
+margin_left = -8.0
+margin_top = -16.0
+margin_right = 8.0
+margin_bottom = -11.0
+custom_styles/fg = SubResource( 3 )
+custom_styles/bg = SubResource( 4 )
+value = 50.0
+percent_visible = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="ThirstBar"]
+margin_left = 2.92512
+margin_top = 0.951553
+margin_right = 50.9251
+margin_bottom = 16.9516
+rect_scale = Vector2( 0.2, 0.2 )
+text = "Thirst"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReproductionBar" type="ProgressBar" parent="."]
+margin_left = -8.0
+margin_top = -8.0
+margin_right = 8.0
+margin_bottom = -3.0
+custom_styles/fg = SubResource( 5 )
+custom_styles/bg = SubResource( 6 )
+value = 50.0
+percent_visible = false
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="ReproductionBar"]
+margin_left = -0.259914
+margin_top = 1.08811
+margin_right = 90.7401
+margin_bottom = 17.0881
+rect_scale = Vector2( 0.2, 0.2 )
+text = "Reproduction"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
