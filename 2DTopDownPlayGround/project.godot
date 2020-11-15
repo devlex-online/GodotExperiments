@@ -29,11 +29,6 @@ window/size/width=480
 window/size/height=270
 window/stretch/aspect="keep"
 
-[mono]
-
-debugger_agent/wait_for_debugger=true
-debugger_agent/wait_timeout=10000
-
 [rendering]
 
 quality/driver/driver_name="GLES2"
