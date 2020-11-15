@@ -29,4 +29,4 @@ _autoTileCoordinateVectors = [ Vector2( 0, 0 ) ]
 _pathToAddedScene = "res://Scenes/Plant.tscn"
 
 [node name="Chicken_f" parent="." instance=ExtResource( 2 )]
-position = Vector2( 216.714, 142.901 )
+position = Vector2( 241.429, 115.929 )
