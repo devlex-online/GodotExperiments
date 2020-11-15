@@ -16,7 +16,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Gender.cs" />
+    <Compile Include="Enums\Gender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scenes\ChickenBase.cs" />
     <Compile Include="Scenes\EatableObject.cs" />

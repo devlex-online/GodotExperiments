@@ -20,9 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee7ccf4-2d08-41c7-87b1-7621d9b8574b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Gender.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.2DTopDownPlayGround/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DTopDownPlayGround/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2DTopDownPlayGround.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/2DTopDownPlayGround.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gender.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/ChickenBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/ChickenBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/EatablePlants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/EatablePlants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Ground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Ground.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/NeedIndicators.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/NeedIndicators.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/NeedsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/NeedsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/RandomMovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/RandomMovementController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/ExtendedTileMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/ExtendedTileMap.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +54,14 @@
         <option value="$PROJECT_DIR$/Scenes/EntityController.cs" />
         <option value="$PROJECT_DIR$/Scenes/EatableObject.cs" />
         <option value="$PROJECT_DIR$/Scenes/RandomMovementController.cs" />
-        <option value="$PROJECT_DIR$/Scenes/EatablePlants.cs" />
         <option value="$PROJECT_DIR$/Scenes/Ground.cs" />
-        <option value="$PROJECT_DIR$/Utilities/ExtendedTileMap.cs" />
         <option value="$PROJECT_DIR$/Scenes/NeedIndicators.cs" />
-        <option value="$PROJECT_DIR$/Scenes/NeedsController.cs" />
         <option value="$PROJECT_DIR$/Gender.cs" />
         <option value="$PROJECT_DIR$/Scenes/ChickenBase.cs" />
+        <option value="$PROJECT_DIR$/Enums/Gender.cs" />
+        <option value="$PROJECT_DIR$/Scenes/EatablePlants.cs" />
+        <option value="$PROJECT_DIR$/Scenes/NeedsController.cs" />
+        <option value="$PROJECT_DIR$/Utilities/ExtendedTileMap.cs" />
       </list>
     </option>
   </component>

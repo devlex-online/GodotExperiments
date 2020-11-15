@@ -4,7 +4,7 @@ using System.Linq;
 using Godot;
 using Array = Godot.Collections.Array;
 
-namespace DTopDownPlayGround
+namespace DTopDownPlayGround.Utilities
 {
     public class ExtendedTileMap : TileMap
     {
@@ -23,15 +23,16 @@ namespace DTopDownPlayGround
         
             return usedTiles;
         }
-        public void AddNodeToTiles(string _pathToAddedScene, List<string> _tileNames, List<Vector2> _autoTileCoordinateVectors)
+
+        protected void AddNodeToTiles(string pathToAddedScene, List<string> tileNames, List<Vector2> autoTileCoordinateVectors)
         {
-            var sceneToAdd = ResourceLoader.Load(_pathToAddedScene) as PackedScene;
+            var sceneToAdd = ResourceLoader.Load(pathToAddedScene) as PackedScene;
 
-            var used_plant_tiles = GetUsedCellsByTileNames(_tileNames);
+            var usedPlantTiles = GetUsedCellsByTileNames(tileNames);
 
-            foreach (Vector2 tileVectorInGrid in used_plant_tiles)
+            foreach (Vector2 tileVectorInGrid in usedPlantTiles)
             {
-                foreach (var autoTileCoordinateVector in _autoTileCoordinateVectors)
+                foreach (var autoTileCoordinateVector in autoTileCoordinateVectors)
                 {
                     var convertedToIntVector = new Vector2((int)autoTileCoordinateVector.x, (int)autoTileCoordinateVector.y);
                     if ( convertedToIntVector == GetCellAutotileCoord((int) tileVectorInGrid.x, (int) tileVectorInGrid.y))

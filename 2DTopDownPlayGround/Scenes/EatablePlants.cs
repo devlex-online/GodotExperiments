@@ -1,16 +1,18 @@
-using Godot;
-using System;
 using System.Collections.Generic;
-using DTopDownPlayGround;
+using DTopDownPlayGround.Utilities;
+using Godot;
 
-public class EatablePlants : ExtendedTileMap
+namespace DTopDownPlayGround.Scenes
 {
-    [Export] private List<string> _tileNames;
-    [Export] private List<Vector2> _autoTileCoordinateVectors;
-    [Export] private string _pathToAddedScene;
-    public override void _Ready()
+    public class EatablePlants : ExtendedTileMap
     {
-        AddNodeToTiles(_pathToAddedScene, _tileNames, _autoTileCoordinateVectors);
-    }
+        [Export] private List<string> _tileNames;
+        [Export] private List<Vector2> _autoTileCoordinateVectors;
+        [Export] private string _pathToAddedScene;
+        public override void _Ready()
+        {
+            AddNodeToTiles(_pathToAddedScene, _tileNames, _autoTileCoordinateVectors);
+        }
 
+    }
 }

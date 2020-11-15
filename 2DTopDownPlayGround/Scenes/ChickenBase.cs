@@ -1,3 +1,4 @@
+using DTopDownPlayGround.Enums;
 using Godot;
 
 namespace DTopDownPlayGround.Scenes

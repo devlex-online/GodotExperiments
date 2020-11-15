@@ -26,8 +26,8 @@ namespace DTopDownPlayGround.Scenes
             }
         }
 
-        private Vector2? _target = null;
-        private bool _hasTarget = false;
+        private Vector2? _target;
+        private bool _hasTarget;
         public override void _Ready()
         {
             _rng = new RandomNumberGenerator();

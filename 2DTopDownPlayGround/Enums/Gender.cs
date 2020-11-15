@@ -1,4 +1,4 @@
-namespace DTopDownPlayGround
+namespace DTopDownPlayGround.Enums
 {
     public enum Gender
     {
