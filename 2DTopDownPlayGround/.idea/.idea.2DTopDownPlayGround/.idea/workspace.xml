@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee7ccf4-2d08-41c7-87b1-7621d9b8574b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.2DTopDownPlayGround/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DTopDownPlayGround/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.2DTopDownPlayGround/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DTopDownPlayGround/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2DTopDownPlayGround.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/2DTopDownPlayGround.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/Chicken_f.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Chicken_f.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/NeedsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/NeedsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Playground.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Playground.tscn" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +34,7 @@
     <setting file="file://$PROJECT_DIR$/Scenes/NeedIndicators.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E6304263-D500-4F95-9811-C4FEA2255651/2f/2a7a9b9a/Node.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scenes/NeedsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/41/bbea3ca9/NodePath.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scenes/EatableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scenes/Ground.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scenes/EatablePlants.cs" root0="FORCE_HIGHLIGHTING" />

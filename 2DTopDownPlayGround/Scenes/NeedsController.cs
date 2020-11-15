@@ -176,7 +176,7 @@ namespace DTopDownPlayGround.Scenes
 
         public override void _PhysicsProcess(float delta)
         {
-            GD.Print("H:",Hunger," T:",Thirst, " R:",Reproduction);
+           // GD.Print("H:",Hunger," T:",Thirst, " R:",Reproduction);
         }
     }
 }

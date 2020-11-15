@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7.53896, 7.36728 )
 
-[node name="Chicken_f" type="KinematicBody2D"]
+[node name="Chicken_m" type="KinematicBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.559982, -0.559978 )
@@ -15,6 +15,6 @@ shape = SubResource( 1 )
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 31, 0, 16, 16 )
+region_rect = Rect2( 63, 0, 16, 16 )
 
 [node name="ChickenBase" parent="." instance=ExtResource( 2 )]
