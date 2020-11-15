@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/NeedsController.cs" type="Script" id=1]
+
+[node name="NeedsController" type="Node"]
+script = ExtResource( 1 )
+_alwaysEatLimit = 20.0
+_maybeEatLimit = 15.0
+_eatAreaPath = NodePath("../EatingArea")
+_searchFoodAreaPath = NodePath("../SearchFoodArea")
+_randomMovementControllerPath = NodePath("../RandomMovementController")
