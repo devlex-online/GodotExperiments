@@ -18,3 +18,4 @@ region_enabled = true
 region_rect = Rect2( 31, 0, 16, 16 )
 
 [node name="ChickenBase" parent="." instance=ExtResource( 2 )]
+_gender = 1

@@ -9,11 +9,13 @@
       <e p=".mono/temp/obj" t="ExcludeRecursive" />
       <e p="2DTopDownPlayGround.csproj" t="IncludeRecursive" />
       <e p="2DTopDownPlayGround.sln" t="IncludeFlat" />
+      <e p="Gender.cs" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Properties" t="Include">
         <e p="AssemblyInfo.cs" t="Include" />
       </e>
       <e p="Scenes" t="Include">
+        <e p="ChickenBase.cs" t="Include" />
         <e p="EatableObject.cs" t="Include" />
         <e p="EatablePlants.cs" t="Include" />
         <e p="Ground.cs" t="Include" />
