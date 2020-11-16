@@ -25,6 +25,7 @@
     <Compile Include="Scenes\NeedIndicators.cs" />
     <Compile Include="Scenes\NeedsController.cs" />
     <Compile Include="Scenes\RandomMovementController.cs" />
+    <Compile Include="Scenes\ReproductionController.cs" />
     <Compile Include="Utilities\ExtendedTileMap.cs" />
   </ItemGroup>
   <ItemGroup>

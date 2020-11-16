@@ -1,3 +1,4 @@
+using System;
 using Godot;
 
 namespace DTopDownPlayGround.Scenes
@@ -43,6 +44,9 @@ namespace DTopDownPlayGround.Scenes
 
         private bool _hasTargetFood;
 
+        [Signal]
+        delegate void SexWith(Node other);
+        
         public override void _Ready()
         {
             _rng = new RandomNumberGenerator();
@@ -87,6 +91,10 @@ namespace DTopDownPlayGround.Scenes
                     SetTargetFood(area.Position);
                 }
             }
+            else if (area.IsInGroup("ReproductionArea") && Math.Abs(Reproduction - ReproductionMax) < 0.5 && !_hasTargetFood)
+            {
+                SetTargetFood(area.GetParent().GetParent<Node2D>().Position);
+            }
         }
         public void OnEatAreaAreaEntered(Area2D area)
         {
@@ -109,8 +117,7 @@ namespace DTopDownPlayGround.Scenes
                     }
                 }
             }
-
-            if (area.IsInGroup("WaterArea"))
+            else if (area.IsInGroup("WaterArea"))
             {
                 if (Thirst > _alwaysDrinkLimit)
                 {
@@ -119,6 +126,13 @@ namespace DTopDownPlayGround.Scenes
                 else if (Thirst > _maybeDrinkLimit && _rng.RandiRange(1, 100) > 90)
                 {
                     Drink();
+                }
+            }
+            else if (area.IsInGroup("ReproductionArea"))
+            {
+                if (Math.Abs(Reproduction - ReproductionMax) < 0.5)
+                {
+                    EmitSignal(nameof(SexWith));
                 }
             }
         }

@@ -1,3 +1,4 @@
+using System.Threading;
 using DTopDownPlayGround.Enums;
 using Godot;
 
@@ -6,17 +7,33 @@ namespace DTopDownPlayGround.Scenes
     public class ChickenBase : Node2D
     {
         [Export(PropertyHint.Enum)] private Gender _gender;
+        private NeedsController _needsController;
+        private ReproductionController _reproductionController;
 
-        // Called when the node enters the scene tree for the first time.
         public override void _Ready()
         {
-        
+            _reproductionController = GetNode<ReproductionController>("ReproductionController");
+            _needsController = GetNode<NeedsController>("NeedsController");
+            _reproductionController.Gender = _gender;
+            _reproductionController.Connect("HadSex", this, "ReproductionControllerOnHadSex");
+            _needsController.Connect("SexWith", this, "NeedsControllerOnSexWith");
         }
 
-//  // Called every frame. 'delta' is the elapsed time since the previous frame.
-//  public override void _Process(float delta)
-//  {
-//      
-//  }
+        private void NeedsControllerOnSexWith(Node other)
+        {
+            var reproductionController =  other.GetNodeOrNull<ReproductionController>("ReproductionController");
+            _reproductionController.Sex(reproductionController);
+        }
+        private void ReproductionControllerOnHadSex()
+        {
+            if (_gender == Gender.Male)
+            {
+                _needsController.ModifyReproduction(_needsController.ReproductionMax/2 * -1);
+            }
+            else
+            {
+                _needsController.ModifyReproduction(_needsController.ReproductionMax * -1);
+            }
+        }
     }
 }

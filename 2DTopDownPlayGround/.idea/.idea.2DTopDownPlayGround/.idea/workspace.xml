@@ -20,15 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee7ccf4-2d08-41c7-87b1-7621d9b8574b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Scenes/ReproductionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2DTopDownPlayGround/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DTopDownPlayGround/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2DTopDownPlayGround/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DTopDownPlayGround/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2DTopDownPlayGround.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/2DTopDownPlayGround.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gender.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enums/Gender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Enums/Gender.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/ChickenBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/ChickenBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/EatablePlants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/EatablePlants.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Ground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Ground.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/NeedIndicators.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/NeedIndicators.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/ChickenBase.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/ChickenBase.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/NeedsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/NeedsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/RandomMovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/RandomMovementController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilities/ExtendedTileMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/ExtendedTileMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +41,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Scenes/NeedIndicators.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E6304263-D500-4F95-9811-C4FEA2255651/2f/2a7a9b9a/Node.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Scenes/ReproductionController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scenes/NeedsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/181B3D09-D30B-4D83-9837-7B1820FDD680/41/bbea3ca9/NodePath.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scenes/EatableObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -57,11 +58,12 @@
         <option value="$PROJECT_DIR$/Scenes/Ground.cs" />
         <option value="$PROJECT_DIR$/Scenes/NeedIndicators.cs" />
         <option value="$PROJECT_DIR$/Gender.cs" />
-        <option value="$PROJECT_DIR$/Scenes/ChickenBase.cs" />
-        <option value="$PROJECT_DIR$/Enums/Gender.cs" />
         <option value="$PROJECT_DIR$/Scenes/EatablePlants.cs" />
-        <option value="$PROJECT_DIR$/Scenes/NeedsController.cs" />
         <option value="$PROJECT_DIR$/Utilities/ExtendedTileMap.cs" />
+        <option value="$PROJECT_DIR$/Enums/Gender.cs" />
+        <option value="$PROJECT_DIR$/Scenes/ReproductionController.cs" />
+        <option value="$PROJECT_DIR$/Scenes/ChickenBase.cs" />
+        <option value="$PROJECT_DIR$/Scenes/NeedsController.cs" />
       </list>
     </option>
   </component>
@@ -151,73 +153,144 @@
       <screen x="0" y="23" width="1280" height="739" />
     </state>
     <state width="540" height="464" key="DebuggerActiveHint/0.23.1280.739@0.23.1280.739" timestamp="1604867582942" />
-    <state width="1238" height="257" key="GridCell.Tab.0.bottom" timestamp="1605124111465">
+    <state width="1238" height="257" key="GridCell.Tab.0.bottom" timestamp="1605559002397">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.0.bottom/0.23.1280.739@0.23.1280.739" timestamp="1605124111465" />
-    <state width="1238" height="257" key="GridCell.Tab.0.center" timestamp="1605124111463">
+    <state width="1238" height="257" key="GridCell.Tab.0.bottom/0.23.1280.739@0.23.1280.739" timestamp="1605559002397" />
+    <state width="1238" height="257" key="GridCell.Tab.0.center" timestamp="1605559002395">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.0.center/0.23.1280.739@0.23.1280.739" timestamp="1605124111463" />
-    <state width="1238" height="257" key="GridCell.Tab.0.left" timestamp="1605124111462">
+    <state width="1238" height="257" key="GridCell.Tab.0.center/0.23.1280.739@0.23.1280.739" timestamp="1605559002395" />
+    <state width="1238" height="257" key="GridCell.Tab.0.left" timestamp="1605559002394">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.0.left/0.23.1280.739@0.23.1280.739" timestamp="1605124111462" />
-    <state width="1238" height="257" key="GridCell.Tab.0.right" timestamp="1605124111464">
+    <state width="1238" height="257" key="GridCell.Tab.0.left/0.23.1280.739@0.23.1280.739" timestamp="1605559002394" />
+    <state width="1238" height="257" key="GridCell.Tab.0.right" timestamp="1605559002396">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.0.right/0.23.1280.739@0.23.1280.739" timestamp="1605124111464" />
-    <state width="1238" height="257" key="GridCell.Tab.1.bottom" timestamp="1605124111251">
+    <state width="1238" height="257" key="GridCell.Tab.0.right/0.23.1280.739@0.23.1280.739" timestamp="1605559002396" />
+    <state width="1238" height="257" key="GridCell.Tab.1.bottom" timestamp="1605559024925">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.1.bottom/0.23.1280.739@0.23.1280.739" timestamp="1605124111251" />
-    <state width="1238" height="257" key="GridCell.Tab.1.center" timestamp="1605124111250">
+    <state width="1238" height="257" key="GridCell.Tab.1.bottom/0.23.1280.739@0.23.1280.739" timestamp="1605559024925" />
+    <state width="1238" height="257" key="GridCell.Tab.1.center" timestamp="1605559024924">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.1.center/0.23.1280.739@0.23.1280.739" timestamp="1605124111250" />
-    <state width="1238" height="257" key="GridCell.Tab.1.left" timestamp="1605124111249">
+    <state width="1238" height="257" key="GridCell.Tab.1.center/0.23.1280.739@0.23.1280.739" timestamp="1605559024924" />
+    <state width="1238" height="257" key="GridCell.Tab.1.left" timestamp="1605559024923">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.1.left/0.23.1280.739@0.23.1280.739" timestamp="1605124111249" />
-    <state width="1238" height="257" key="GridCell.Tab.1.right" timestamp="1605124111251">
+    <state width="1238" height="257" key="GridCell.Tab.1.left/0.23.1280.739@0.23.1280.739" timestamp="1605559024923" />
+    <state width="1238" height="257" key="GridCell.Tab.1.right" timestamp="1605559024925">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.1.right/0.23.1280.739@0.23.1280.739" timestamp="1605124111251" />
-    <state width="1238" height="257" key="GridCell.Tab.2.bottom" timestamp="1605124111253">
+    <state width="1238" height="257" key="GridCell.Tab.1.right/0.23.1280.739@0.23.1280.739" timestamp="1605559024925" />
+    <state width="1238" height="257" key="GridCell.Tab.2.bottom" timestamp="1605559001894">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.2.bottom/0.23.1280.739@0.23.1280.739" timestamp="1605124111253" />
-    <state width="1238" height="257" key="GridCell.Tab.2.center" timestamp="1605124111252">
+    <state width="1238" height="257" key="GridCell.Tab.2.bottom/0.23.1280.739@0.23.1280.739" timestamp="1605559001894" />
+    <state width="1238" height="257" key="GridCell.Tab.2.center" timestamp="1605559001893">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.2.center/0.23.1280.739@0.23.1280.739" timestamp="1605124111252" />
-    <state width="1238" height="257" key="GridCell.Tab.2.left" timestamp="1605124111252">
+    <state width="1238" height="257" key="GridCell.Tab.2.center/0.23.1280.739@0.23.1280.739" timestamp="1605559001893" />
+    <state width="1238" height="257" key="GridCell.Tab.2.left" timestamp="1605559001893">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.2.left/0.23.1280.739@0.23.1280.739" timestamp="1605124111252" />
-    <state width="1238" height="257" key="GridCell.Tab.2.right" timestamp="1605124111253">
+    <state width="1238" height="257" key="GridCell.Tab.2.left/0.23.1280.739@0.23.1280.739" timestamp="1605559001893" />
+    <state width="1238" height="257" key="GridCell.Tab.2.right" timestamp="1605559001894">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.2.right/0.23.1280.739@0.23.1280.739" timestamp="1605124111253" />
-    <state width="1238" height="257" key="GridCell.Tab.3.bottom" timestamp="1605124111255">
+    <state width="1238" height="257" key="GridCell.Tab.2.right/0.23.1280.739@0.23.1280.739" timestamp="1605559001894" />
+    <state width="1238" height="257" key="GridCell.Tab.3.bottom" timestamp="1605559001897">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.3.bottom/0.23.1280.739@0.23.1280.739" timestamp="1605124111255" />
-    <state width="1238" height="257" key="GridCell.Tab.3.center" timestamp="1605124111254">
+    <state width="1238" height="257" key="GridCell.Tab.3.bottom/0.23.1280.739@0.23.1280.739" timestamp="1605559001897" />
+    <state width="1238" height="257" key="GridCell.Tab.3.center" timestamp="1605559001895">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.3.center/0.23.1280.739@0.23.1280.739" timestamp="1605124111254" />
-    <state width="1238" height="257" key="GridCell.Tab.3.left" timestamp="1605124111254">
+    <state width="1238" height="257" key="GridCell.Tab.3.center/0.23.1280.739@0.23.1280.739" timestamp="1605559001895" />
+    <state width="1238" height="257" key="GridCell.Tab.3.left" timestamp="1605559001895">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.3.left/0.23.1280.739@0.23.1280.739" timestamp="1605124111254" />
-    <state width="1238" height="257" key="GridCell.Tab.3.right" timestamp="1605124111255">
+    <state width="1238" height="257" key="GridCell.Tab.3.left/0.23.1280.739@0.23.1280.739" timestamp="1605559001895" />
+    <state width="1238" height="257" key="GridCell.Tab.3.right" timestamp="1605559001896">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
-    <state width="1238" height="257" key="GridCell.Tab.3.right/0.23.1280.739@0.23.1280.739" timestamp="1605124111255" />
+    <state width="1238" height="257" key="GridCell.Tab.3.right/0.23.1280.739@0.23.1280.739" timestamp="1605559001896" />
     <state x="303" y="83" width="672" height="678" key="search.everywhere.popup" timestamp="1605475249462">
       <screen x="0" y="23" width="1280" height="739" />
     </state>
     <state x="303" y="83" width="672" height="678" key="search.everywhere.popup/0.23.1280.739@0.23.1280.739" timestamp="1605475249462" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Scenes/NeedsController.cs</url>
+          <line>94</line>
+          <properties documentPath="$PROJECT_DIR$/Scenes/NeedsController.cs" initialLine="94">
+            <startOffsets>
+              <option value="3231" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3232" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Scenes/NeedsController.cs</url>
+          <line>133</line>
+          <properties documentPath="$PROJECT_DIR$/Scenes/NeedsController.cs" initialLine="133">
+            <startOffsets>
+              <option value="4583" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4584" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Scenes/ReproductionController.cs</url>
+          <line>26</line>
+          <properties documentPath="$PROJECT_DIR$/Scenes/ReproductionController.cs" initialLine="26">
+            <startOffsets>
+              <option value="654" />
+            </startOffsets>
+            <endOffsets>
+              <option value="655" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Scenes/ReproductionController.cs</url>
+          <line>32</line>
+          <properties documentPath="$PROJECT_DIR$/Scenes/ReproductionController.cs" initialLine="32">
+            <startOffsets>
+              <option value="788" />
+            </startOffsets>
+            <endOffsets>
+              <option value="846" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Scenes/ChickenBase.cs</url>
+          <line>22</line>
+          <properties documentPath="$PROJECT_DIR$/Scenes/ChickenBase.cs" initialLine="22">
+            <startOffsets>
+              <option value="857" />
+            </startOffsets>
+            <endOffsets>
+              <option value="858" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
