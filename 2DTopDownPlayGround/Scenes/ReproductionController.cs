@@ -33,8 +33,11 @@ namespace DTopDownPlayGround.Scenes
             if (Gender.CanHaveSexWith(partner.Gender) && !_isPregnant)
             {
                 EmitSignal(nameof(HadSex));
-                _isPregnant = true;
-                _estimatedBirthTimer.Start(_pregnancyTime);
+                if (Gender == Gender.Female)
+                {
+                    _isPregnant = true;
+                    _estimatedBirthTimer.Start(_pregnancyTime);
+                }
             }
         }
     }

@@ -15,16 +15,16 @@ namespace DTopDownPlayGround.Scenes
             _reproductionController = GetNode<ReproductionController>("ReproductionController");
             _needsController = GetNode<NeedsController>("NeedsController");
             _reproductionController.Gender = _gender;
-            _reproductionController.Connect("HadSex", this, "ReproductionControllerOnHadSex");
-            _needsController.Connect("SexWith", this, "NeedsControllerOnSexWith");
+            _reproductionController.Connect("HadSex", this, nameof(ReproductionControllerOnHadSex));
+            _needsController.Connect("SexWith", this, nameof(NeedsControllerOnSexWith));
         }
 
-        private void NeedsControllerOnSexWith(Node other)
+        public void NeedsControllerOnSexWith(Node other)
         {
             var reproductionController =  other.GetNodeOrNull<ReproductionController>("ReproductionController");
             _reproductionController.Sex(reproductionController);
         }
-        private void ReproductionControllerOnHadSex()
+        public void ReproductionControllerOnHadSex()
         {
             if (_gender == Gender.Male)
             {

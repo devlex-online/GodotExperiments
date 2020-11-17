@@ -45,7 +45,7 @@ namespace DTopDownPlayGround.Scenes
         private bool _hasTargetFood;
 
         [Signal]
-        delegate void SexWith(Node other);
+        public delegate void SexWith(Node other);
         
         public override void _Ready()
         {
@@ -132,7 +132,7 @@ namespace DTopDownPlayGround.Scenes
             {
                 if (Math.Abs(Reproduction - ReproductionMax) < 0.5)
                 {
-                    EmitSignal(nameof(SexWith));
+                    EmitSignal(nameof(SexWith), area.GetParent());
                 }
             }
         }
