@@ -18,22 +18,29 @@ namespace DTopDownPlayGround.Scenes
         private Timer _estimatedBirthTimer;
         
         [Export] 
-        private string _pathToBabyScene;
-        private PackedScene _babyScene;
+        private string _pathToMaleBabyScene;
+        [Export] 
+        private string _pathToFemaleBabyScene;
+        private PackedScene _maleBabyScene;
+        private PackedScene _femaleBabyScene;
+        private RandomNumberGenerator _rng;
 
         [Signal]
         public delegate void Birth(Node baby);
 
         public override void _Ready()
         {
+            _rng = new RandomNumberGenerator();
+            _rng.Randomize();
             _estimatedBirthTimer = GetNode<Timer>("EstimatedBirthTimer");
             _estimatedBirthTimer.Connect("timeout", this, "TimerOnTimeout");
-            _babyScene = ResourceLoader.Load(_pathToBabyScene) as PackedScene;
+            _maleBabyScene = ResourceLoader.Load(_pathToMaleBabyScene) as PackedScene;
+            _femaleBabyScene = ResourceLoader.Load(_pathToFemaleBabyScene) as PackedScene;
         }
 
         public void TimerOnTimeout()
         {
-            var babyNode = _babyScene.Instance();
+            var babyNode = _rng.RandiRange(1, 100) > 50 ? _maleBabyScene.Instance() : _femaleBabyScene.Instance();
             EmitSignal(nameof(Birth), babyNode);
         }
         
