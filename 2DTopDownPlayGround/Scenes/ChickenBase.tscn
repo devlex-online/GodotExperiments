@@ -47,6 +47,7 @@ _kinematicBodyNodePath = NodePath("../..")
 
 [node name="ReproductionController" type="Node" parent="."]
 script = ExtResource( 4 )
+pathToBabyScene = "res://Scenes/Chicken_f.tscn"
 
 [node name="EstimatedBirthTimer" type="Timer" parent="ReproductionController"]
 one_shot = true

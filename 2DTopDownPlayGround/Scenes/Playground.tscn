@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Tilesets/Landscape.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Chicken_f.tscn" type="PackedScene" id=2]
@@ -6,8 +6,10 @@
 [ext_resource path="res://Scenes/Ground.cs" type="Script" id=4]
 [ext_resource path="res://Scenes/EatablePlants.cs" type="Script" id=5]
 [ext_resource path="res://Scenes/Chicken_m.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Main.cs" type="Script" id=7]
 
 [node name="Playground" type="Node2D"]
+script = ExtResource( 7 )
 
 [node name="Ground" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )

@@ -16,16 +16,25 @@ namespace DTopDownPlayGround.Scenes
         private int _pregnancyTime = 10;
 
         private Timer _estimatedBirthTimer;
+        
+        [Export] 
+        private string _pathToBabyScene;
+        private PackedScene _babyScene;
+
+        [Signal]
+        public delegate void Birth(Node baby);
 
         public override void _Ready()
         {
             _estimatedBirthTimer = GetNode<Timer>("EstimatedBirthTimer");
             _estimatedBirthTimer.Connect("timeout", this, "TimerOnTimeout");
+            _babyScene = ResourceLoader.Load(_pathToBabyScene) as PackedScene;
         }
 
         public void TimerOnTimeout()
         {
-            GD.Print("BIRTH!!!!");
+            var babyNode = _babyScene.Instance();
+            EmitSignal(nameof(Birth), babyNode);
         }
         
         public void Sex(ReproductionController partner)

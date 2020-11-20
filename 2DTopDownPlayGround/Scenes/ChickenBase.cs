@@ -9,6 +9,7 @@ namespace DTopDownPlayGround.Scenes
         [Export(PropertyHint.Enum)] private Gender _gender;
         private NeedsController _needsController;
         private ReproductionController _reproductionController;
+        
 
         public override void _Ready()
         {
@@ -16,7 +17,15 @@ namespace DTopDownPlayGround.Scenes
             _needsController = GetNode<NeedsController>("NeedsController");
             _reproductionController.Gender = _gender;
             _reproductionController.Connect("HadSex", this, nameof(ReproductionControllerOnHadSex));
+            
+            _reproductionController.Connect("Birth", this, nameof(ActorBirth));
             _needsController.Connect("SexWith", this, nameof(NeedsControllerOnSexWith));
+        }
+
+        private void ActorBirth(Node baby)
+        {
+            ((Node2D) baby).Position = ((Node2D) GetParent()).Position;
+            GetParent().GetParent().AddChild(baby);
         }
 
         public void NeedsControllerOnSexWith(Node other)
