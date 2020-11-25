@@ -20,14 +20,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scenes\ChickenBase.cs" />
     <Compile Include="Scenes\EatableObject.cs" />
-    <Compile Include="Scenes\EatablePlants.cs" />
-    <Compile Include="Scenes\Ground.cs" />
-    <Compile Include="Scenes\Main.cs" />
     <Compile Include="Scenes\NeedIndicators.cs" />
     <Compile Include="Scenes\NeedsController.cs" />
     <Compile Include="Scenes\RandomMovementController.cs" />
     <Compile Include="Scenes\ReproductionController.cs" />
-    <Compile Include="Utilities\ExtendedTileMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utilities">

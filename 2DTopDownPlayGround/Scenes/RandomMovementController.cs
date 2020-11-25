@@ -4,7 +4,6 @@ namespace DTopDownPlayGround.Scenes
 {
     public class RandomMovementController : Node
     {
-
         [Export]
         private NodePath _kinematicBodyNodePath;
 
@@ -33,20 +32,26 @@ namespace DTopDownPlayGround.Scenes
             _rng = new RandomNumberGenerator();
             _rng.Randomize();
             _velocity = NewVelocity();
+            
             //GD.Print(_rng.Seed);
             _kinematicBody = GetNode<KinematicBody2D>(_kinematicBodyNodePath);
         }
 
         public override void _PhysicsProcess(float delta)
         {
+            GD.Print($"has target {_hasTarget} – _velocity {_velocity} - target {_target}");
             if (_hasTarget)
             {
                 _velocity = GetVelocityToTarget();
+                GD.Print($"veloToTarget {_velocity}");
+                
             }
+
             var collision = _kinematicBody.MoveAndCollide(_velocity * delta);
             if (collision != null)
             {
                 _velocity = NewVelocity();
+                GD.Print($"veloAfterCollison  {_velocity}");
             }
         }
 
