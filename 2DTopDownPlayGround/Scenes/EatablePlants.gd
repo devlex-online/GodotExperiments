@@ -1,5 +1,7 @@
 extends ExtendedTileMap
 
+class_name eatable_plants
+
 export var tile_names: PoolStringArray
 export var auto_tile_coordinate_vectors: PoolVector2Array
 export var path_to_added_scene: String

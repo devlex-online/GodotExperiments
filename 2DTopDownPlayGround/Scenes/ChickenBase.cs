@@ -4,45 +4,45 @@ using Godot;
 
 namespace DTopDownPlayGround.Scenes
 {
-    public class ChickenBase : Node2D
-    {
-        [Export(PropertyHint.Enum)] private Gender _gender;
-        private NeedsController _needsController;
-        private ReproductionController _reproductionController;
-        
+	public class ChickenBase : Node2D
+	{
+		[Export(PropertyHint.Enum)] private Gender _gender;
+		private NeedsController _needsController;
+		private ReproductionController _reproductionController;
+		
 
-        public override void _Ready()
-        {
-            _reproductionController = GetNode<ReproductionController>("ReproductionController");
-            _needsController = GetNode<NeedsController>("NeedsController");
-            _reproductionController.Gender = _gender;
-            _reproductionController.Connect("HadSex", this, nameof(ReproductionControllerOnHadSex));
-            
-            _reproductionController.Connect("Birth", this, nameof(ActorBirth));
-            _needsController.Connect("SexWith", this, nameof(NeedsControllerOnSexWith));
-        }
+		public override void _Ready()
+		{
+			_reproductionController = GetNode<ReproductionController>("ReproductionController");
+			_needsController = GetNode<NeedsController>("NeedsController");
+			_reproductionController.Gender = _gender;
+			_reproductionController.Connect("HadSex", this, nameof(ReproductionControllerOnHadSex));
+			
+			_reproductionController.Connect("Birth", this, nameof(ActorBirth));
+			_needsController.Connect("SexWith", this, nameof(NeedsControllerOnSexWith));
+		}
 
-        private void ActorBirth(Node baby)
-        {
-            ((Node2D) baby).Position = ((Node2D) GetParent()).Position;
-            GetParent().GetParent().AddChild(baby);
-        }
+		private void ActorBirth(Node baby)
+		{
+			((Node2D) baby).Position = ((Node2D) GetParent()).Position;
+			GetParent().GetParent().AddChild(baby);
+		}
 
-        public void NeedsControllerOnSexWith(Node other)
-        {
-            var reproductionController =  other.GetNodeOrNull<ReproductionController>("ReproductionController");
-            _reproductionController.Sex(reproductionController);
-        }
-        public void ReproductionControllerOnHadSex()
-        {
-            if (_gender == Gender.Male)
-            {
-                _needsController.ModifyReproduction(_needsController.ReproductionMax/2 * -1);
-            }
-            else
-            {
-                _needsController.ModifyReproduction(_needsController.ReproductionMax * -1);
-            }
-        }
-    }
+		public void NeedsControllerOnSexWith(Node other)
+		{
+			var reproductionController =  other.GetNodeOrNull<ReproductionController>("ReproductionController");
+			_reproductionController.Sex(reproductionController);
+		}
+		public void ReproductionControllerOnHadSex()
+		{
+			if (_gender == Gender.Male)
+			{
+				_needsController.ModifyReproduction(_needsController.ReproductionMax/2 * -1);
+			}
+			else
+			{
+				_needsController.ModifyReproduction(_needsController.ReproductionMax * -1);
+			}
+		}
+	}
 }

@@ -9,13 +9,43 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node2D",
+"class": "ChickenBase",
+"language": "GDScript",
+"path": "res://Scenes/chickenBase.gd"
+}, {
 "base": "TileMap",
 "class": "ExtendedTileMap",
 "language": "GDScript",
 "path": "res://Utilities/ExtendedTileMap.gd"
+}, {
+"base": "ExtendedTileMap",
+"class": "eatable_plants",
+"language": "GDScript",
+"path": "res://Scenes/EatablePlants.gd"
+}, {
+"base": "ExtendedTileMap",
+"class": "ground",
+"language": "GDScript",
+"path": "res://Scenes/ground.gd"
+}, {
+"base": "Node",
+"class": "needs_controller",
+"language": "GDScript",
+"path": "res://needs_controller.gd"
+}, {
+"base": "Node",
+"class": "random_movement_controller",
+"language": "GDScript",
+"path": "res://random_movement_controller.gd"
 } ]
 _global_script_class_icons={
-"ExtendedTileMap": ""
+"ChickenBase": "",
+"ExtendedTileMap": "",
+"eatable_plants": "",
+"ground": "",
+"needs_controller": "",
+"random_movement_controller": ""
 }
 
 [application]
