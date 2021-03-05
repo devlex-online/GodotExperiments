@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://systems/camera/third_person/ThirdPersonCamera.gd" type="Script" id=1]
+
+[node name="ThirdPersonCamera" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="CameraBoom" type="SpringArm" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.5, 0 )
+spring_length = 10.0
+
+[node name="Camera" type="Camera" parent="CameraBoom"]

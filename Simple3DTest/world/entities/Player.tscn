@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://systems/inventory/DevlexInventory.gd" type="Script" id=1]
+[ext_resource path="res://world/entities/Player.gd" type="Script" id=2]
+[ext_resource path="res://systems/camera/third_person/ThirdPersonCamera.tscn" type="PackedScene" id=3]
+[ext_resource path="res://systems/movement/PlayerMovementController.tscn" type="PackedScene" id=4]
+
+[sub_resource type="CapsuleShape" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.470588, 0.52549, 0.270588, 1 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.470588, 0.52549, 0.270588, 1 )
+metallic = 0.4
+
+[node name="Player" type="KinematicBody"]
+collision_layer = 2
+script = ExtResource( 2 )
+
+[node name="PlayerMovementController" parent="." instance=ExtResource( 4 )]
+
+[node name="ThirdPersonCamera" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.295829, 0, 0, 0, 0.578068, 0, 0, 0, 0.204709, 0, 0.652094, 0 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 0.295829, 0, 0, 0, 0.578068, 0, 0, 0, 0.204709, 0, 0.652094, 0 )
+shape = SubResource( 1 )
+
+[node name="CSGSphere" type="CSGSphere" parent="."]
+transform = Transform( 0.295829, 0, 0, 0, 0.578068, 0, 0, 0, 0.204709, 0, 0.652094, 0 )
+material = SubResource( 2 )
+
+[node name="CSGBox" type="CSGBox" parent="CSGSphere"]
+transform = Transform( 0.493967, 0, 0, 0, 0.170085, 0, 0, 0, 1.66129, 0, 0.418675, 0.980778 )
+material = SubResource( 3 )
+
+[node name="DevlexInventory" type="Node" parent="."]
+script = ExtResource( 1 )

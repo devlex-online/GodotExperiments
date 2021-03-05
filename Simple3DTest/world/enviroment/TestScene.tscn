@@ -1,0 +1,81 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://common/GameStateController.gd" type="Script" id=1]
+[ext_resource path="res://UI/InventoryGrid.gd" type="Script" id=2]
+[ext_resource path="res://world/entities/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://items/entities/DummyOrb.tscn" type="PackedScene" id=4]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.219608, 0.188235, 0.188235, 1 )
+
+[sub_resource type="BoxShape" id=2]
+
+[sub_resource type="BoxShape" id=3]
+
+[node name="TestScene" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+
+[node name="Enviroment" type="Spatial" parent="."]
+
+[node name="Floor" type="CSGBox" parent="Enviroment"]
+transform = Transform( 9.7, 0, 0, 0, 1, 0, 0, 0, 9.7, 0, -0.1, 0 )
+width = 11.048
+height = 0.001
+depth = 14.69
+material = SubResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="Enviroment/Floor"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Enviroment/Floor/StaticBody"]
+transform = Transform( 5.47766, 0, 0, 0, 0.00344372, 0, 0, 0, 7.27198, 0, 0, 0 )
+shape = SubResource( 2 )
+
+[node name="Wall" type="CSGBox" parent="Enviroment"]
+transform = Transform( 2.32771, 0, 0, 0, 2.35873, 0, 0, 0, 0.040359, 0, 0, -3.34446 )
+
+[node name="StaticBody" type="StaticBody" parent="Enviroment/Wall"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Enviroment/Wall/StaticBody"]
+shape = SubResource( 3 )
+
+[node name="DummyOrb" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.42796, 0.398883, 7.46594 )
+
+[node name="DummyOrb2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.01688, 0.398883, 2.83368 )
+
+[node name="DummyOrb3" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.01688, 0.398883, -8.04586 )
+
+[node name="DummyOrb4" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.17258, 1.54305, 10.5313 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+
+[node name="GameStateController" type="Node" parent="."]
+script = ExtResource( 1 )
+
+[node name="UI" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="UI"]
+margin_left = 29.6507
+margin_top = 385.459
+margin_right = 188.651
+margin_bottom = 562.459
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="UI/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+script = ExtResource( 2 )
