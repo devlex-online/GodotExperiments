@@ -1,5 +1,6 @@
-extends Node
 class_name DevlexInventory
+extends Node
+
 
 export(bool) var persist_inventory = true
 export var inventory_persistence_path = "user://player_inventory.tres"

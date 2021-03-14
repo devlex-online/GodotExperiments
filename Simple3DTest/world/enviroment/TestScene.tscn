@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://common/GameStateController.gd" type="Script" id=1]
 [ext_resource path="res://UI/InventoryGrid.gd" type="Script" id=2]
 [ext_resource path="res://world/entities/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://items/entities/DummyOrb.tscn" type="PackedScene" id=4]
+[ext_resource path="res://world/entities/GenericEnemy.tscn" type="PackedScene" id=5]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.219608, 0.188235, 0.188235, 1 )
@@ -79,3 +80,6 @@ margin_top = 10.0
 margin_right = -10.0
 margin_bottom = -10.0
 script = ExtResource( 2 )
+
+[node name="GenericEnemy2" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.12866, 0.31274, 8.10011 )

@@ -1,5 +1,6 @@
-extends Resource
 class_name DevlexInventoryResource
+extends Resource
+
 
 signal inventory_changed
 

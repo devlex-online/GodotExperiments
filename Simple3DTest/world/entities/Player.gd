@@ -1,5 +1,6 @@
-extends KinematicBody
 class_name Player
+extends Entity
+
 
 var isReady = false
 func _ready():

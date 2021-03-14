@@ -30,16 +30,52 @@ _global_script_classes=[ {
 "path": "res://systems/inventory/DevlexItemResource.gd"
 }, {
 "base": "KinematicBody",
+"class": "Entity",
+"language": "GDScript",
+"path": "res://world/entities/Entity.gd"
+}, {
+"base": "StateBaseClass",
+"class": "EntityState",
+"language": "GDScript",
+"path": "res://systems/statemachine/EntityState.gd"
+}, {
+"base": "Node",
+"class": "FiniteStateMachine",
+"language": "GDScript",
+"path": "res://systems/statemachine/FiniteStateMachine.gd"
+}, {
+"base": "Reference",
+"class": "Follow",
+"language": "GDScript",
+"path": "res://systems/ai_behavior/states/Follow.gd"
+}, {
+"base": "Entity",
 "class": "Player",
 "language": "GDScript",
 "path": "res://world/entities/Player.gd"
+}, {
+"base": "EntityState",
+"class": "Seek",
+"language": "GDScript",
+"path": "res://systems/ai_behavior/states/Seek.gd"
+}, {
+"base": "Node",
+"class": "StateBaseClass",
+"language": "GDScript",
+"path": "res://systems/statemachine/StateBaseClass.gd"
 } ]
 _global_script_class_icons={
 "DevlexInventory": "",
 "DevlexInventoryItem": "",
 "DevlexInventoryResource": "",
 "DevlexItemResource": "",
-"Player": ""
+"Entity": "",
+"EntityState": "",
+"FiniteStateMachine": "",
+"Follow": "",
+"Player": "",
+"Seek": "",
+"StateBaseClass": ""
 }
 
 [application]
